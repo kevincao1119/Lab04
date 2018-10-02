@@ -13,7 +13,9 @@ int main(int argc, char *argv[])
     while(digitalRead(0) == 1){
     printf("Got a 1\n");
     digitalWrite(2,HIGH);
-   digitalWrite(1,LOW);
+    digitalWrite(1,LOW);
+    ifttt("http:red.eecs.yorku.ca:8080/trigger/event/with/key/211532710","kevin22")
+
    }
 printf("waitting for events\n");
 if(digitalRead(0)==0){
